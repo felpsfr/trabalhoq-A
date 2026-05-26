@@ -1,0 +1,44 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\felip\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\felip\OneDrive\Área de Trabalho\TRABALHO TERÇA\repo
+configfile: pytest.ini
+collecting ... collected 35 items
+
+tests/unit/test_avaliacao.py::TestCalcularMedia::test_lista_vazia_retorna_zero PASSED [  2%]
+tests/unit/test_avaliacao.py::TestCalcularMedia::test_unica_nota_retorna_a_propria_nota PASSED [  5%]
+tests/unit/test_avaliacao.py::TestCalcularMedia::test_media_de_varias_notas PASSED [  8%]
+tests/unit/test_avaliacao.py::TestCalcularMedia::test_media_arredondada_para_uma_casa PASSED [ 11%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_fora_do_intervalo_lanca_value_error[0] PASSED [ 14%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_fora_do_intervalo_lanca_value_error[6] PASSED [ 17%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_fora_do_intervalo_lanca_value_error[-1] PASSED [ 20%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_fora_do_intervalo_lanca_value_error[10] PASSED [ 22%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_fora_do_intervalo_lanca_value_error[100] PASSED [ 25%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_nao_inteira_lanca_value_error[3.5] PASSED [ 28%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_nao_inteira_lanca_value_error[5] PASSED [ 31%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_nao_inteira_lanca_value_error[None] PASSED [ 34%]
+tests/unit/test_avaliacao.py::TestValidacaoDeNota::test_nota_nao_inteira_lanca_value_error[nota_invalida3] PASSED [ 37%]
+tests/unit/test_avaliacao.py::TestRestaurante::test_restaurante_novo_tem_media_zero_e_zero_avaliacoes PASSED [ 40%]
+tests/unit/test_avaliacao.py::TestRestaurante::test_adicionar_avaliacoes_atualiza_media_e_contagem PASSED [ 42%]
+tests/unit/test_avaliacao.py::TestRestaurante::test_adicionar_nota_invalida_nao_altera_estado PASSED [ 45%]
+tests/unit/test_busca.py::TestFiltroPorTermo::test_termo_vazio_retorna_todos PASSED [ 48%]
+tests/unit/test_busca.py::TestFiltroPorTermo::test_termo_substring_case_insensitive PASSED [ 51%]
+tests/unit/test_busca.py::TestFiltroPorTermo::test_termo_sem_correspondencia_retorna_lista_vazia PASSED [ 54%]
+tests/unit/test_busca.py::TestFiltroPorCategoria::test_categoria_todos_nao_filtra PASSED [ 57%]
+tests/unit/test_busca.py::TestFiltroPorCategoria::test_filtra_apenas_categoria_solicitada PASSED [ 60%]
+tests/unit/test_busca.py::TestFiltroPorCategoria::test_categoria_inexistente_retorna_lista_vazia PASSED [ 62%]
+tests/unit/test_busca.py::TestFiltroCombinado::test_termo_e_categoria_aplicados_juntos PASSED [ 65%]
+tests/unit/test_busca.py::TestFiltroCombinado::test_termo_combinado_com_categoria_que_nao_bate PASSED [ 68%]
+tests/unit/test_taxa_entrega.py::TestDistanciaValida::test_distancia_dentro_do_raio_base_cobra_taxa_fixa PASSED [ 71%]
+tests/unit/test_taxa_entrega.py::TestDistanciaValida::test_distancia_acima_do_raio_base_cobra_adicional_por_km PASSED [ 74%]
+tests/unit/test_taxa_entrega.py::TestDistanciaValida::test_distancia_no_limite_maximo_de_cobertura PASSED [ 77%]
+tests/unit/test_taxa_entrega.py::TestDistanciaInvalida::test_distancia_nao_positiva_lanca_value_error[0] PASSED [ 80%]
+tests/unit/test_taxa_entrega.py::TestDistanciaInvalida::test_distancia_nao_positiva_lanca_value_error[-1] PASSED [ 82%]
+tests/unit/test_taxa_entrega.py::TestDistanciaInvalida::test_distancia_nao_positiva_lanca_value_error[-10.5] PASSED [ 85%]
+tests/unit/test_taxa_entrega.py::TestDistanciaInvalida::test_distancia_fora_da_cobertura_lanca_value_error PASSED [ 88%]
+tests/unit/test_taxa_entrega.py::TestFreteGratis::test_pedido_no_limite_de_frete_gratis_zera_taxa PASSED [ 91%]
+tests/unit/test_taxa_entrega.py::TestFreteGratis::test_pedido_acima_do_limite_de_frete_gratis_zera_taxa PASSED [ 94%]
+tests/unit/test_taxa_entrega.py::TestFreteGratis::test_pedido_abaixo_do_limite_mantem_taxa_normal PASSED [ 97%]
+tests/unit/test_taxa_entrega.py::TestFreteGratis::test_valor_pedido_negativo_lanca_value_error PASSED [100%]
+
+============================= 35 passed in 0.15s ==============================

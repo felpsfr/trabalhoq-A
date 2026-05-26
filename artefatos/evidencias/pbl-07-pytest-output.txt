@@ -1,0 +1,19 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\felip\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\felip\OneDrive\Área de Trabalho\TRABALHO TERÇA\repo
+configfile: pytest.ini
+collecting ... collected 10 items
+
+tests/e2e/test_home.py::TestHome::test_home_carrega_apos_login PASSED    [ 10%]
+tests/e2e/test_home.py::TestHome::test_home_lista_restaurantes PASSED    [ 20%]
+tests/e2e/test_home.py::TestHome::test_clicar_em_card_abre_pagina_do_restaurante PASSED [ 30%]
+tests/e2e/test_home.py::TestHome::test_navega_para_meus_favoritos PASSED [ 40%]
+tests/e2e/test_home.py::TestHome::test_navega_para_meus_pedidos PASSED   [ 50%]
+tests/e2e/test_login.py::TestLogin::test_formulario_de_login_carrega PASSED [ 60%]
+tests/e2e/test_login.py::TestLogin::test_login_com_credenciais_validas_redireciona_para_home PASSED [ 70%]
+tests/e2e/test_login.py::TestLogin::test_login_com_senha_incorreta_mostra_erro PASSED [ 80%]
+tests/e2e/test_login.py::TestLogin::test_login_com_email_inexistente_mostra_erro PASSED [ 90%]
+tests/e2e/test_login.py::TestLogin::test_campos_obrigatorios_bloqueiam_submit_vazio PASSED [100%]
+
+============================= 10 passed in 36.08s =============================

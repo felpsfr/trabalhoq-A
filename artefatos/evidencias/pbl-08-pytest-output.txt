@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\felip\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\felip\OneDrive\Área de Trabalho\TRABALHO TERÇA\repo
+configfile: pytest.ini
+plugins: bdd-8.1.0
+collecting ... collected 5 items
+
+tests/bdd/test_autenticacao_steps.py::test_login_com_credenciais_válidas <- ..\..\..\..\AppData\Local\Programs\Python\Python314\Lib\site-packages\pytest_bdd\scenario.py PASSED [ 20%]
+tests/bdd/test_autenticacao_steps.py::test_login_com_senha_incorreta <- ..\..\..\..\AppData\Local\Programs\Python\Python314\Lib\site-packages\pytest_bdd\scenario.py PASSED [ 40%]
+tests/bdd/test_autenticacao_steps.py::test_login_com_email_inexistente <- ..\..\..\..\AppData\Local\Programs\Python\Python314\Lib\site-packages\pytest_bdd\scenario.py PASSED [ 60%]
+tests/bdd/test_exploracao_steps.py::test_lista_de_restaurantes_é_exibida_na_home <- ..\..\..\..\AppData\Local\Programs\Python\Python314\Lib\site-packages\pytest_bdd\scenario.py PASSED [ 80%]
+tests/bdd/test_exploracao_steps.py::test_abrir_detalhe_de_um_restaurante <- ..\..\..\..\AppData\Local\Programs\Python\Python314\Lib\site-packages\pytest_bdd\scenario.py PASSED [100%]
+
+============================= 5 passed in 27.67s ==============================
